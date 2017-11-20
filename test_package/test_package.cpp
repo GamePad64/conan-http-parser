@@ -1,6 +1,6 @@
-// #include <cpprest/json.h>
+#include <http_parser.h>
 
 int main()
 {
-    // const auto parsed_value = web::json::value::parse(U("-22"));
+    return http_parser_version() == 0;
 }
